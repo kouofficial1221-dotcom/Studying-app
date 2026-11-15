@@ -1,0 +1,7 @@
+spring:
+  # DB設定
+  jdbc:mysql:
+    url: jdbc:mysql://localhost:3306/studying_app
+    username: DevUser01
+    password: abc123!"#
+    driver-class-name: com.mysql.cj.jdbc.Driver
