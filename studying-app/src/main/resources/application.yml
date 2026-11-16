@@ -5,3 +5,7 @@ spring:
     username: DevUser
     password: abc123!"#
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+  sql:
+    init:
+      mode: always
