@@ -29,9 +29,14 @@
 * Java
 * Spring Boot
 * Thymeleaf
-* SQL
+* SpringBoot Security
 * Git
 * GitHub
+* MySQL
+
+## ER図
+
+<img src="docs/ER図ver1.png" alt="ER図" width="700">
 
 ## 今後実装予定
 
