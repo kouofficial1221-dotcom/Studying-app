@@ -5,7 +5,10 @@ spring:
     username: DevUser
     password: abc123!"#
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   sql:
     init:
       mode: always
+
+  # MyBatis設定
+mybatis:
+  mapper-locations: classpath*:/mapper/mysql/*.xml
