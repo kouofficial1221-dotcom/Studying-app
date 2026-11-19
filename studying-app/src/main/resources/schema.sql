@@ -1,5 +1,5 @@
 /** ユーザー登録 */
-CREATE TABLE users(
+CREATE TABLE IF NOT EXISTS users(
 	user_id BIGINT NOT NULL AUTO_INCREMENT,
 	user_name VARCHAR(20) NOT NULL,
 	email VARCHAR(254) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE users(
 ) ENGINE=InnoDB;
 
 /** 学習カテゴリー */
-CREATE TABLE study_category(
+CREATE TABLE IF NOT EXISTS study_category(
 	category_id BIGINT NOT NULL AUTO_INCREMENT,
 	user_id BIGINT NOT NULL,
 	category_title VARCHAR(50) NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE study_category(
 ) ENGINE=InnoDB;
 
 /** 学習項目 */
-CREATE TABLE study_content(
+CREATE TABLE IF NOT EXISTS study_content(
 	content_id BIGINT NOT NULL AUTO_INCREMENT,
 	user_id BIGINT NOT NULL,
 	category_id BIGINT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS detail_task(
 ) ENGINE=InnoDB;
 
 /** ポモドーロタイマー履歴 */
-CREATE TABLE timer_log(
+CREATE TABLE IF NOT EXISTS timer_log(
 	log_id BIGINT NOT NULL AUTO_INCREMENT,
 	task_id BIGINT NOT NULL,
 	study_time INT NOT NULL,
